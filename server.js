@@ -12,7 +12,7 @@ app.use(express.static('public'));
 app.get('/api/hello', (req, res) => {
   visits++;
   res.json({
-    message: 'Hello from the server 👋',
+    message: 'This is your server speaking 👋',
     serverTime: new Date().toISOString(),
     visits: visits,
   });
